@@ -1,0 +1,297 @@
+/* General reset for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(28, 28, 74, 0.893);
+    padding: 0 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(193, 187, 199);
+    font-size: 1.1rem;
+}
+
+.left {
+    font-size: 3rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    text-align: center;
+    height: 500px;
+}
+
+.firstsection > div {
+    width: 30%;
+    text-align: center;
+}
+
+.leftsection {
+    font-size: 1.5rem;
+}
+/* Social Links Styling */
+.social-links {
+    margin-top: 20px;
+    text-align: center; /* Center the links */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px; /* Space between the links */
+    color: #ddd; /* Light gray color for links */
+    font-size: 1.2rem; /* Slightly larger text for better visibility */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+.social-links a:hover {
+    color: #6a0dad; /* Change color to purple on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+
+.rightsection img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+}
+
+.purple {
+    color: rgb(97, 242, 157);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: rgb(97, 242, 157);
+}
+
+.main {
+    margin-bottom: 7.5rem;
+}
+
+.secondsection {
+    background-color: white;
+    color: black;
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.secondsection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 200px;
+    background-color: white;
+}
+
+.skills h3 {
+    color: black;
+    text-align: center;
+    line-height: 100px;
+}
+
+.skill {
+    width: 30%;
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #ddd;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.html {
+    width: 90%;
+    background: #f16529;
+}
+
+.css {
+    width: 85%;
+    background: #2965f1;
+}
+
+.js {
+    width: 75%;
+    background: #f0db4f;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.project {
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    height: 550px;
+}
+
+.project img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 1rem 2rem;
+    background: #3c90d1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 20px;
+    text-align: center; /* Center the links */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px; /* Space between the links */
+    color: #ddd; /* Light gray color for links */
+    font-size: 1.2rem; /* Slightly larger text for better visibility */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding for spacing */
+    font-size: 14px; /* Font size */
+    left: 0;
+    right: 0;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Set font family */
+}
+
+.container {
+    max-width: 1200px; /* Maximum container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Padding for spacing */
+}
+
+
+

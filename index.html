@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+           <img src="logo.svg"alt="">
+            <div class="left"><p>My Portfolio</p></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#aboutme ">ABOUT ME</a></li>
+                   <li><a href="cv.html">MY CV</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main1">
+        <section class="firstsection">
+           <!-- Left Section of First Section (About Me Text and Social Links) -->
+    <div class="leftsection">
+    Hi, My name is <span class="purple"> Deepak Singh</span>
+    <div>and I am a passionate</div>
+    <span id="element"></span>
+    
+    <!-- Social Links Section -->
+    <div class="social-links">
+        <a href="https://github.com/deepak-singh-aer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/deepak-singh-aer?utm_source=share&utm_campaign=share_via&utm_
+        content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        <a href="mailto:deepakaer512@gmail.com" class="email">Email</a>
+    </div>
+</div>
+
+            <div class="rightsection">
+                <img src="Myimage-bg.png" alt="Deepak Singh Image">
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section class="secondsection" id="aboutme">
+            <div class="about">
+                <h2>About Me</h2>
+                <p>An Enthusiastic and motivated MCA student with a strong foundation in web development technologies, including HTML, CSS, JavaScript, and frameworks like React and Node.js. Skilled in problem-solving, debugging, and writing efficient, scalable code. Hands-on experience through academic projects that involved developing user-friendly websites and applications. Eager to apply my technical knowledge and learn new technologies in a fast-paced environment. Looking forward to starting my career as a web developer and contributing to the growth of a dynamic organization.</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <div class="progress-bar html"></div>
+                    </div>
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <div class="progress-bar css"></div>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar js"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <img src="netflix.png" alt="Project 1 - Netflix Clone">
+                        <h3>Netflix Clone</h3>
+                        <p>Developed a Netflix clone using HTML, CSS, and React.js to replicate the front page and integrate JavaScript for interactivity. The project showcases a responsive design and dynamic user interface similar to the original Netflix homepage.</p>
+                    </div>
+                    <div class="project">
+                        <img src="Flipkart.png" alt="Project 2 - Flipkart Clone">
+                        <h3>Flipkart Clone</h3>
+                        <p>Created a Flipkart clone with a focus on e-commerce functionality, utilizing Django for backend development and MySQL for database management. The project includes features like product listings, a shopping cart, and order processing functionality.</p>
+                    </div>
+                    <div class="project">
+                        <img src="calculator3.png" alt="Project 3 - Simple Calculator">
+                        <h3>Simple Calculator</h3>
+                        <p>Built a simple calculator using HTML and CSS to perform basic arithmetic operations. It features a user-friendly interface and is a great example of a beginner-level web development project focused on pure front-end technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me via the form below!</p>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'Graphic designer', 'Web designer', 'Video editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>

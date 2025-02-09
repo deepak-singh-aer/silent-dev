@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="portfolio.css"> <!-- Link to your main stylesheet -->
+    <style>
+        /* General reset for margins and padding */
+        body, h1, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Main container */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header and Navbar */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #f4f4f4;
+        }
+
+        /* CV Content */
+        .cv-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-content h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cv-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cv-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .cv-content a:hover {
+            background-color: #555;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>    
+              <li> <a href="index.html">BACK TO HOME</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="cv-content">
+            <h1>My Curriculum Vitae</h1>
+            <p>Welcome to my CV page! You can either download my CV as a PDF or view it directly here:</p>
+            
+            <!-- Link to Download the CV -->
+            <a href="CV.pdf" download>Download My CV (PDF)</a>
+            
+            <!-- Embed the CV if you prefer -->
+            <p>Or view my CV below:</p>
+            <iframe src="CV.pdf"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
